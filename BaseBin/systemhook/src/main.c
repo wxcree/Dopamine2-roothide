@@ -434,9 +434,9 @@ roothide_init_with_executable(gExecutablePath);
 			const char *tweakLoaderPath = JBROOT_PATH("/usr/lib/TweakLoader.dylib");
 			if (access(tweakLoaderPath, F_OK) == 0) {
 				void *tweakLoaderHandle = dlopen(tweakLoaderPath, RTLD_NOW);
-				if (tweakLoaderHandle != NULL) {
-					dlclose(tweakLoaderHandle);
-				}
+				// if (tweakLoaderHandle != NULL) {
+				// 	dlclose(tweakLoaderHandle);
+				// }
 			}
 		}
 
